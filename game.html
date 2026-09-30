@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Football Hub ⚽</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial;background:#07140c;color:#fff}
+nav{background:#0d2416;padding:15px;text-align:center;position:sticky;top:0}
+nav a{color:#62ff8c;text-decoration:none;margin:8px;font-weight:bold}
+.hero{text-align:center;padding:70px 20px;background:#123d21}
+h1{font-size:50px;margin:10px}h1 span,h2{color:#62ff8c}
+section{max-width:900px;margin:auto;padding:45px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.card{background:#10251a;padding:20px;border-radius:12px;border:1px solid #285b37}
+.card:hover{border-color:#62ff8c}
+button{background:#62ff8c;border:0;padding:12px 20px;border-radius:20px;font-weight:bold;cursor:pointer}
+footer{text-align:center;padding:25px;background:#030904;color:#aaa}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#play">How To Play</a>
+<a href="#skills">Skills</a>
+<a href="#rules">Rules</a>
+<a href="#positions">Positions</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<div class="hero">
+<div style="font-size:70px">⚽</div>
+<h1>Football <span>Hub</span></h1>
+<p>Learn football. Practice football. Play football.</p>
+</div>
+
+<section id="play">
+<h2>⚽ How To Play</h2>
+<div class="grid">
+<div class="card"><h3>🎯 Objective</h3><p>Score more goals than the other team.</p></div>
+<div class="card"><h3>👟 Control</h3><p>Use your feet, head and body to control the ball.</p></div>
+<div class="card"><h3>🤝 Teamwork</h3><p>Pass, move and communicate with teammates.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>🔥 Important Skills</h2>
+<div class="grid">
+<div class="card"><h3>Dribbling</h3><p>Move with the ball while keeping it close.</p></div>
+<div class="card"><h3>Passing</h3><p>Pass accurately to your teammates.</p></div>
+<div class="card"><h3>Shooting</h3><p>Strike the ball accurately toward goal.</p></div>
+<div class="card"><h3>First Touch</h3><p>Control the ball when receiving it.</p></div>
+</div>
+</section>
+
+<section id="rules">
+<h2>📜 Basic Rules</h2>
+<div class="grid">
+<div class="card">👥 11 players per team in standard football.</div>
+<div class="card">⏱️ A standard match has two 45-minute halves.</div>
+<div class="card">🚫 Outfield players cannot deliberately handle the ball.</div>
+<div class="card">🟨 Yellow card = caution.</div>
+<div class="card">🟥 Red card = player is sent off.</div>
+<div class="card">🚩 Offside can be called when a player becomes involved in play from an offside position.</div>
+</div>
+</section>
+
+<section id="positions">
+<h2>👕 Positions</h2>
+<div class="grid">
+<div class="card">🧤 <b>Goalkeeper</b><br>Protects the goal.</div>
+<div class="card">🛡️ <b>Defender</b><br>Stops attacks.</div>
+<div class="card">🧠 <b>Midfielder</b><br>Connects defence and attack.</div>
+<div class="card">⚡ <b>Winger</b><br>Attacks from the sides.</div>
+<div class="card">🎯 <b>Striker</b><br>Creates and scores goals.</div>
+</div>
+</section>
+
+<section>
+<h2>🏃 Beginner Training</h2>
+<div class="grid">
+<div class="card">Day 1 — Ball Control</div>
+<div class="card">Day 2 — Passing</div>
+<div class="card">Day 3 — Dribbling</div>
+<div class="card">Day 4 — Shooting</div>
+<div class="card">Day 5 — Speed</div>
+<div class="card">Day 6 — Practice Match</div>
+<div class="card">Day 7 — Rest & Stretch</div>
+</div>
+</section>
+
+<section id="quiz">
+<h2>🧠 Quick Quiz</h2>
+<div class="card">
+<p>How many players are normally on the field for one team?</p>
+<button onclick="check(11)">11</button>
+<button onclick="check(7)">7</button>
+<button onclick="check(15)">15</button>
+<p id="answer"></p>
+</div>
+</section>
+
+<footer>
+⚽ <b>Football Hub</b><br>
+Learn • Practice • Play
+</footer>
+
+<script>
+function check(x){
+document.getElementById("answer").innerHTML=
+x==11?"✅ Correct!":"❌ Try again!";
+}
+</script>
+
+</body>
+</html>
